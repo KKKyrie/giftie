@@ -6,24 +6,40 @@
     <img src="../assets/images/star-2.png" alt="" class="star second">
     <img class="heart" src="../assets/images/love-heart.png" alt="">
     <div class="main">
-      <h1 class="title">星选 Valentine</h1>
-      <p>Hi Stella,</p>
-      <p>这次的礼物，用抽奖的形式</p>
-      <p>把“选择权”交给你</p>
+      <h1 class="title">{{ title }}</h1>
+      <p class="message" v-for="message in messages" :key="message.key">{{ message.wording }}</p>
     </div>
     <div class="footer">
       <span>©️本活动最终解释权归</span>
-      <a href="https://kyrieliu.cn" target="_self"> kyrieliu </a>
+      <span> {{ owner }} </span>
       <span>所有</span>
     </div>
   </div>
 </template>
 
 <script>
+import { homeConfig } from '../gift.setting.js';
 export default {
   name: 'LotteryHome',
   data() {
-    return {}
+    return {
+      title: '',
+      messages: [],
+      owner: '',
+    }
+  },
+
+  methods: {
+    initConfig() {
+      const { title, messages, owner } = homeConfig;
+      this.title = title;
+      this.messages = messages;
+      this.owner = owner;
+    },
+  },
+
+  created() {
+    this.initConfig();
   },
 }
 </script>
@@ -70,6 +86,9 @@ export default {
 }
 .main > .title {
   margin-bottom: 10px;
+}
+.main > .message {
+  margin-bottom: 8px;
 }
 .footer {
   color: #909399;

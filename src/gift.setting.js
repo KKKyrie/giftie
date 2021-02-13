@@ -1,13 +1,13 @@
 
 // 首页配置
-export const home = {
+export const homeConfig = {
   // 标题
   title: '520送礼抽奖',
   // 留言，数组的每一项代表一行
   messages: [
-    '1',
-    '2',
-    '3'
+    { key: 'a', wording: '这是第一行文案', },
+    { key: 's', wording: '这是第二行文案', },
+    { key: 'd', wording: '然后，这里是第三行文案', },
   ],
   // 最终解释权归属人
   owner: 'XXX'
@@ -15,6 +15,7 @@ export const home = {
 
 // 礼物清单
 // 字段 key 不用改，只要保证每个礼物的 key 字段是不同的即可
+// 图片放在 public/images 中，建议是正方形，否则影响视觉体验
 export const gifts = [
   { key: 'q', name: 'Dior双飞套装', image: '/images/1.png',  description: '「经典迷人色彩，彰显奢华魅力」' },
   { key: 'w', name: '腾讯视频终身VIP', image: '/images/2.png',  description: '“为你承包一辈子的 VIP”' },

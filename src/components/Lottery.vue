@@ -22,7 +22,7 @@
 import Home from './Lottery.Home.vue';
 import GiftDisplayer from './Lottery.GiftDisplayer.vue';
 import Turntable from './Lottery.Turntable.vue';
-import GIFTS from '@/gift.setting.js';
+import { gifts as GIFTS } from '@/gift.setting.js';
 export default {
   name: 'Lottery',
   components: { Home, GiftDisplayer, Turntable },

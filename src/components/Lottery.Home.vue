@@ -32,6 +32,7 @@ export default {
   methods: {
     initConfig() {
       const { title, messages, owner } = homeConfig;
+      document.title = title;
       this.title = title;
       this.messages = messages;
       this.owner = owner;

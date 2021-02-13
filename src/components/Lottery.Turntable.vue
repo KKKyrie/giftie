@@ -17,8 +17,9 @@
 </template>
 
 <script>
+import { GLOBAL_KEYS, gifts } from '../gift.setting.js';
 export default {
-  name: "LotteryTurntable",
+  name: 'LotteryTurntable',
   data() {
     this.defaultStyle = {
       fontColor: "#AFFFD7",
@@ -56,16 +57,14 @@ export default {
     getGiftList() {
       const prizes = [];
       let axis = [[0, 0], [1, 0], [2, 0], [2, 1], [2, 2], [1, 2], [0, 2], [0, 1],];
-      let data = [
-        { name: "Dior双飞套装", img: require("/public/images/1.png"), top: "70%",},
-        { name: "腾讯终身VIP", img: require("/public/images/2.png"), top: "70%" },
-        { name: "兰蔻小黑瓶", img: require("/public/images/3.png"), top: "70%" },
-        { name: "520红包", img: require("/public/images/6.png"), top: "70%" },
-        { name: "Dior星空套装", img: require("/public/images/5.png"), top: "70%" },
-        { name: "1314红包", img: require("/public/images/6.png"), top: "70%" },
-        { name: "UR购物券", img: require("/public/images/7.png"), top: "70%" },
-        { name: "Dyson美发套装", img: require("/public/images/8.png"), top: "70%" },
-      ];
+      let data = gifts.map(item => {
+        return {
+          name: item.name,
+          img: require(`../../public${item.image}`),
+          top: '70%',
+        };
+      });
+      
       // let data = [];
       data.forEach((item, index) => {
         prizes.push({
@@ -75,15 +74,15 @@ export default {
           fonts: [{ text: item.name, top: item.top }],
           imgs: [
             {
-              src: require("../assets/images/block-bg.png"),
+              src: require('../assets/images/block-bg.png'),
               activeSrc: require('../assets/images/active-block-bg.png'),
-              width: "100%",
-              height: "100%",
+              width: '100%',
+              height: '100%',
             },
             {
               src: item.img,
-              width: "70%",
-              top: "3%",
+              width: '70%',
+              top: '3%',
             },
           ],
         });
@@ -99,9 +98,9 @@ export default {
     endCallBack (prize) {
       const { imgs, title } = prize;
       const imageUrl = imgs[1].src;
-      localStorage.setItem('HAS_GIFT', '1');
-      localStorage.setItem('GIFT_NAME', title);
-      localStorage.setItem('GIFT_IMAGE_URL', imageUrl);
+      localStorage.setItem(GLOBAL_KEYS.EXIST_KEY, '1');
+      localStorage.setItem(GLOBAL_KEYS.NAME_KEY, title);
+      localStorage.setItem(GLOBAL_KEYS.IMAGE_KEY, imageUrl);
       setTimeout(() => {
         window.location.reload();
       }, 1500);

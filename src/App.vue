@@ -8,6 +8,7 @@
 <script>
 import Lottery from './components/Lottery.vue'
 import Gift from './components/Gift.vue'
+import { GLOBAL_KEYS } from './gift.setting.js';
 export default {
   name: 'App',
   components: { Lottery, Gift },
@@ -19,8 +20,7 @@ export default {
 
   methods: {
     checkLocalGift() {
-      const key = 'HAS_GIFT';
-      const hasGift = localStorage.getItem(key);
+      const hasGift = localStorage.getItem(GLOBAL_KEYS.EXIST_KEY);
       if (!!hasGift === true) {
         this.isShowGift = true;
       }

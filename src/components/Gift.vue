@@ -5,28 +5,31 @@
       <img :src="giftImageUrl" alt="" class="gift-image">
     </div>
     <h3>{{ giftName }}</h3>
-    <div class="replay-button" @click="replay">重新体验</div>
+    <div v-if="isShowRestart" class="replay-button" @click="replay">重新体验</div>
   </div>
 </template>
 
 <script>
+import { GLOBAL_KEYS, IS_SHOW_RESTART } from '../gift.setting.js';
 export default {
   name: 'Gift',
   data() {
     return {
       giftName: '',
       giftImageUrl: '',
+      isShowRestart: false,
     }
   },
   methods: {
     getLocalGift() {
-      const giftName = localStorage.getItem('GIFT_NAME');
-      const giftImageUrl = localStorage.getItem('GIFT_IMAGE_URL');
+      const giftName = localStorage.getItem(GLOBAL_KEYS.NAME_KEY);
+      const giftImageUrl = localStorage.getItem(GLOBAL_KEYS.IMAGE_KEY);
       this.giftName = giftName;
       this.giftImageUrl = giftImageUrl;
+      this.isShowRestart = IS_SHOW_RESTART;
     },
     replay() {
-      localStorage.removeItem('HAS_GIFT');
+      localStorage.removeItem(GLOBAL_KEYS.EXIST_KEY);
       location.replace('/');
     },
   },

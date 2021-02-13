@@ -1,0 +1,59 @@
+<template>
+  <div id="app" class="app">
+    <lottery v-if="!isShowGift" />
+    <gift v-else />
+  </div>
+</template>
+
+<script>
+import Lottery from './components/Lottery.vue'
+import Gift from './components/Gift.vue'
+export default {
+  name: 'App',
+  components: { Lottery, Gift },
+  data() {
+    return {
+      isShowGift: false,
+    }
+  },
+
+  methods: {
+    checkLocalGift() {
+      const key = 'HAS_GIFT';
+      const hasGift = localStorage.getItem(key);
+      if (!!hasGift === true) {
+        this.isShowGift = true;
+      }
+    },
+  },
+  
+  created() {
+    this.checkLocalGift();
+  },
+
+  mounted() {},
+};
+</script>
+
+<style>
+.app {
+  font-family: Muyao, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/images/bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.full-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+</style>

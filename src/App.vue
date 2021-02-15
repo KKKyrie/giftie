@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="app">
-    <lottery v-if="!isShowGift" />
+    <lottery v-if="!isShowGift" @showGift="showGift" />
     <gift v-else />
   </div>
 </template>
@@ -24,6 +24,10 @@ export default {
       if (!!hasGift === true) {
         this.isShowGift = true;
       }
+    },
+
+    showGift() {
+      this.isShowGift = true;
     },
   },
   

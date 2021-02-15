@@ -12,7 +12,7 @@
         />
       </swiper-slide>
       <swiper-slide class="swiper-slide">
-        <turntable />
+        <turntable @success="handleTurntableSuccess" />
       </swiper-slide>
     </swiper>
   </div>
@@ -39,6 +39,10 @@ export default {
   methods: {
     showGifts() {
       this.gifts = GIFTS;
+    },
+
+    handleTurntableSuccess() {
+      this.$emit('showGift');
     },
   },
   mounted() {

@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { GLOBAL_KEYS, gifts } from '../gift.setting.js';
+import { GLOBAL_KEYS, gifts, homeConfig } from '../gift.setting.js';
 export default {
   name: 'LotteryTurntable',
   data() {
@@ -90,10 +90,10 @@ export default {
       this.prizes = prizes;
     },
     startCallBack () {
-      this.$refs.luckyGrid.play()
+      this.$refs.luckyGrid.play();
       setTimeout(() => {
         this.$refs.luckyGrid.stop(Math.random() * 8 >> 0)
-      }, 7000)
+      }, homeConfig.timeout);
     },
     endCallBack (prize) {
       const { imgs, title } = prize;
@@ -102,8 +102,8 @@ export default {
       localStorage.setItem(GLOBAL_KEYS.NAME_KEY, title);
       localStorage.setItem(GLOBAL_KEYS.IMAGE_KEY, imageUrl);
       setTimeout(() => {
-        window.location.reload();
-      }, 1500);
+        this.$emit('success');
+      }, 1200);
     }
   },
 

@@ -14,5 +14,6 @@ Giftie 是一个用来搞定「**送礼问题**」的**终极解决方案**。
   
 ## 示例
 <p align="center"><img alt="demo" src="./demo.png"></p>
+<p align="center" style="color: #909399;">（仅支持微信内访问，请用微信扫描二维码查看示例）</p>
   
 ## 使用指引

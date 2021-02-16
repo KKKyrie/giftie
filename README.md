@@ -1,1 +1,1 @@
-# hey-your-gift
+<p align="center"><img width="100" src="./logo.png" alt="Gift logo"></p>

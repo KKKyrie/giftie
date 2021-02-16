@@ -1,5 +1,5 @@
 <p align="center"><img width="100" src="./logo.png" alt="Gift logo"></p>
-<h1 align="center">hey-your-gift</h1>
+<h1 align="center">Giftie</h1>
 <p align="center">
   <a target="_blank" href="https://kyrieliu.cn"><img src="https://img.shields.io/badge/Powered-kyrieliu-red" alt="Powered by kyrieliu"></a>
   <a href="javascript:void(0)"><img src="https://img.shields.io/badge/Version-1.0.0-blue" alt="version"></a>

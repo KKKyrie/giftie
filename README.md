@@ -7,3 +7,7 @@
   <a href="javascript:void(0)"><img src="https://img.shields.io/badge/Vue-2.x-41b883" alt="vue"></a>
   <a target="_blank" href="https://kyrieliu.cn/images/qrcode.jpg"><img src="https://img.shields.io/badge/Consult-Wechat%20Official%20Account-green" alt="wechat"></a>
 </p>
+  
+## 介绍
+Giftie 是一个用来搞定「**送礼问题**」的**终极解决方案**。  
+采用「自定义文案」+「自定义礼物」+「抽奖」的形式，让礼物的接收方（母亲/妻子/女友）感受到来自于你的真心和爱意。

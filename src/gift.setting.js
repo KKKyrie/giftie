@@ -5,6 +5,7 @@ export const GLOBAL_KEYS = {
   IMAGE_KEY: 'GIFT_IMAGE_URL',
 };
 
+// 是否允许对方在抽奖结束后重新抽奖
 export const IS_SHOW_RESTART = false;
 
 // 首页配置

@@ -79,7 +79,7 @@ export const gifts = [
 
 ### :rocket: 部署
 修改完配置检查没问题后，就可以上线了。  
-Build 后的文件直接放在自己的服务器上即可。如果没有自己的服务器，建议使用[腾讯云的静态网站托管服务](https://cloud.tencent.com/document/product/876/40270)。  
+Build 后的文件直接放在自己的服务器上即可。如果没有自己的服务器，推荐使用[腾讯云的静态网站托管服务](https://cloud.tencent.com/document/product/876/40270)。  
 > Tip: 本项目是一个「纯前端」项目，关键状态都保存在客户端（localStorage）中，毕竟是一个 MVP 的产品，也不会有谁的母亲/老婆/女友会删掉客户端状态重新抽(zuò)奖(bì)吧，不会吧不会吧？如果有觉得不稳妥的朋友，也可以改造成数据库中保存用户状态的模式。  
   
 <br><br><br>

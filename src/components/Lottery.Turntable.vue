@@ -59,7 +59,8 @@ export default {
       let axis = [[0, 0], [1, 0], [2, 0], [2, 1], [2, 2], [1, 2], [0, 2], [0, 1],];
       let data = gifts.map(item => {
         return {
-          name: item.name,
+          fullName: item.name,
+          name: item.alias,
           img: require(`../../public${item.image}`),
           top: '70%',
         };
@@ -71,6 +72,7 @@ export default {
           x: axis[index][0],
           y: axis[index][1],
           title: item.name,
+          fullName: item.fullName,
           fonts: [{ text: item.name, top: item.top }],
           imgs: [
             {
@@ -96,10 +98,10 @@ export default {
       }, homeConfig.timeout);
     },
     endCallBack (prize) {
-      const { imgs, title } = prize;
+      const { imgs, fullName } = prize;
       const imageUrl = imgs[1].src;
       localStorage.setItem(GLOBAL_KEYS.EXIST_KEY, '1');
-      localStorage.setItem(GLOBAL_KEYS.NAME_KEY, title);
+      localStorage.setItem(GLOBAL_KEYS.NAME_KEY, fullName);
       localStorage.setItem(GLOBAL_KEYS.IMAGE_KEY, imageUrl);
       setTimeout(() => {
         this.$emit('success');

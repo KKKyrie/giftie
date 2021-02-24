@@ -90,4 +90,10 @@ Build 后的文件直接放在自己的服务器上即可。如果没有自己�
 - 支持根据自定义抽奖模式（转盘 or 九宫格）
 - 更灵活的文案配置  
   
-:star2: 如果 Giftie 对你有帮助，欢迎用 star 来表达对我的支持，Thx～
+:star2: 如果 Giftie 对你有帮助，欢迎用 star 来表达对我的支持，Thx～  
+  
+<br><br><br>
+
+## :green_heart: 最后
+关注我的个人原创公众号，第一时间 get 更多好玩有趣的文章/项目，让前端变得更有趣 :stuck_out_tongue_closed_eyes:  
+![](https://kyrieliu.cn/images/qrcode.jpg)

@@ -96,4 +96,4 @@ Build 后的文件直接放在自己的服务器上即可。如果没有自己�
 
 ## :green_heart: 最后
 关注我的个人原创公众号，第一时间 get 更多好玩有趣的文章/项目，让前端变得更有趣 :stuck_out_tongue_closed_eyes:  
-![](https://kyrieliu.cn/images/qrcode.jpg)
+<p align="center"><img alt="" src="https://kyrieliu.cn/images/qrcode2.jpg"></p>

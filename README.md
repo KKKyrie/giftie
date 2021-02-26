@@ -39,7 +39,7 @@ export const GLOBAL_KEYS = {
 };
 
 // 是否允许对方在抽奖结束后重新抽奖
-// 我的选择是调试的时候保留，给对方使用是去掉按钮
+// 建议调试的时候保留，给对方使用时去掉
 export const IS_SHOW_RESTART = false;
 
 // 首页配置（主要是文案，暂不支持修改主题）

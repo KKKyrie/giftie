@@ -93,8 +93,12 @@ export default {
     },
     startCallBack () {
       this.$refs.luckyGrid.play();
+      let targetGiftIndex = homeConfig.targetGiftIndex;
+      if (!!targetGiftIndex === false) {
+        targetGiftIndex = Math.random() * 8 >> 0;
+      }
       setTimeout(() => {
-        this.$refs.luckyGrid.stop(Math.random() * 8 >> 0)
+        this.$refs.luckyGrid.stop(targetGiftIndex)
       }, homeConfig.timeout);
     },
     endCallBack (prize) {

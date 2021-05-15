@@ -22,6 +22,8 @@ export const homeConfig = {
   owner: 'XXX',
   // 抽奖转盘的动画时间，单位毫秒
   timeout: 5000,
+  // 指定赠送的礼物的索引（第几个礼物中奖），取值范围 0-8
+  targetGiftIndex: null,
 };
 
 // 礼物清单

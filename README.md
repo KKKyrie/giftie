@@ -17,7 +17,7 @@ Giftie 是一个用来搞定「**送礼问题**」的**终极解决方案**。
 <br><br><br>
 
 ## :chestnut: 示例
-<p align="center"><img alt="demo" src="./demo.png"></p>
+<p align="center"><img alt="demo" width="300" src="./demo.png"></p>
 <p align="center">（仅支持微信内访问，请用微信扫描二维码查看示例）</p>
   
 <br><br><br>
@@ -106,4 +106,4 @@ Build 后的文件直接放在自己的服务器上即可。如果没有自己�
 
 ## :green_heart: 最后
 关注我的个人原创公众号，第一时间 get 更多好玩有趣的文章/项目，让前端变得更有趣 :stuck_out_tongue_closed_eyes:  
-<p align="center"><img alt="" src="https://kyrieliu.cn/images/qrcode2.jpg"></p>
+<p align="center"><img width="350" alt="" src="https://kyrieliu.cn/images/qrcode2.jpg"></p>

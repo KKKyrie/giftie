@@ -8,20 +8,20 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "swiper": "^6.5.1",
-    "vue": "^2.6.11",
-    "vue-awesome-swiper": "^4.1.1",
-    "vue-luck-draw": "^3.4.2"
+    "core-js": "3.6.5",
+    "swiper": "5.2.0",
+    "vue": "2.6.11",
+    "vue-awesome-swiper": "4.1.1",
+    "vue-luck-draw": "3.4.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~5.0.8",
-    "@vue/cli-service": "~5.0.8",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "@vue/cli-plugin-babel": "4.5.0",
+    "@vue/cli-plugin-eslint": "4.5.11",
+    "@vue/cli-service": "4.5.0",
+    "babel-eslint": "10.1.0",
+    "eslint": "6.0.0",
+    "eslint-plugin-vue": "6.2.2",
+    "vue-template-compiler": "2.6.11"
   },
   "eslintConfig": {
     "root": true,

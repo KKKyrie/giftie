@@ -15,6 +15,8 @@ Giftie 是一个用来搞定「**送礼问题**」的**终极解决方案**。
 
 💍我用这个小工具，求婚成功啦！  
   
+有趣的小故事：[Part.1](https://mp.weixin.qq.com/s/7PY3547eXXQEJFVcvEyLww)，[Part.2](https://mp.weixin.qq.com/s/fgGW3uhocwk71FhqoCcIBw)  
+  
 **注意：运行环境仅支持 [Node v14.15.0](https://nodejs.org/dist/v14.15.0/)**
   
 <br><br><br>

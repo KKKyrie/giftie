@@ -2,7 +2,7 @@
 <h1 align="center">Giftie</h1>
 <p align="center">
   <a target="_blank" href="https://kyrieliu.cn"><img src="https://img.shields.io/badge/Powered-kyrieliu-red" alt="Powered by kyrieliu"></a>
-  <a href="javascript:void(0)"><img src="https://img.shields.io/badge/Version-1.0.0-blue" alt="version"></a>
+  <a href="javascript:void(0)"><img src="https://img.shields.io/badge/Version-1.1.0-blue" alt="version"></a>
   <a href="javascript:void(0)"><img src="https://img.shields.io/badge/License-MIT-blueviolet" alt="license"></a>
   <a href="javascript:void(0)"><img src="https://img.shields.io/badge/Vue-2.x-41b883" alt="vue"></a>
   <a href="javascript:void(0)"><img src="https://img.shields.io/badge/node-14.15.0-%23026e00" alt="node version"></a>

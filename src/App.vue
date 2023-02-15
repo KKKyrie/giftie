@@ -6,12 +6,13 @@
 </template>
 
 <script>
-import Lottery from './components/Lottery.vue'
-import Gift from './components/Gift.vue'
 import { GLOBAL_KEYS } from './gift.setting.js';
 export default {
   name: 'App',
-  components: { Lottery, Gift },
+  components: {
+    Lottery: () => import('./components/Lottery.vue'),
+    Gift: () => import('./components/Gift.vue'),
+  },
   data() {
     return {
       isShowGift: false,

@@ -20,12 +20,14 @@
 
 <script>
 import Home from './Lottery.Home.vue';
-import GiftDisplayer from './Lottery.GiftDisplayer.vue';
-import Turntable from './Lottery.Turntable.vue';
 import { gifts as GIFTS } from '@/gift.setting.js';
 export default {
   name: 'Lottery',
-  components: { Home, GiftDisplayer, Turntable },
+  components: {
+    Home,
+    GiftDisplayer: () => import('./Lottery.GiftDisplayer.vue'),
+    Turntable: () => import('./Lottery.Turntable.vue'),
+  },
   data() {
     this.swiperOptions = {
       direction: 'vertical',

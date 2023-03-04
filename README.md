@@ -10,6 +10,8 @@
 </p>
   
 ## :sparkles: 介绍
+> 广东省一键预约结婚 Chrome 插件 [marie](https://github.com/KKKyrie/marie) 现已开源，用完 giftie 就可以考虑用 [marie](https://github.com/KKKyrie/marie) 了 :smirk:  
+
 Giftie 是一个用来搞定「**送礼问题**」的**终极解决方案**。  
 采用「自定义文案」+「自定义礼物」+「抽奖」的形式，让礼物的接收方（母亲/妻子/女友）感受到来自于你的真心和爱意。   
 

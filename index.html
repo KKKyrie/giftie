@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Be My Valentine?</title>
+<style>
+body {
+margin: 0;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #ff758c, #ff7eb3);
+overflow: hidden;
+text-align: center;
+}
+
+h1 {
+font-size: 3em;
+color: white;
+margin-bottom: 40px;
+}
+
+.buttons {
+position: relative;
+}
+
+button {
+font-size: 1.5em;
+padding: 15px 30px;
+margin: 10px;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+transition: transform 0.2s ease;
+}
+
+#yesBtn {
+background-color: #ff4d6d;
+color: white;
+}
+
+#noBtn {
+background-color: white;
+color: #ff4d6d;
+position: absolute;
+}
+
+button:hover {
+transform: scale(1.1);
+}
+
+#message {
+margin-top: 40px;
+font-size: 2em;
+color: white;
+display: none;
+}
+</style>
+</head>
+<body>
+
+<h1>Be my Valentine? 💖</h1>
+
+<div class="buttons">
+<button id="yesBtn">Yes 💘</button>
+<button id="noBtn">No 💔</button>
+</div>
+
+<div id="message">Yaaay! You just made me the happiest! 💞🥰</div>
+
+<script>
+const noBtn = document.getElementById("noBtn");
+const yesBtn = document.getElementById("yesBtn");
+const message = document.getElementById("message");
+
+noBtn.addEventListener("mouseover", () => {
+const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+noBtn.style.left = x + "px";
+noBtn.style.top = y + "px";
+});
+
+yesBtn.addEventListener("click", () => {
+message.style.display = "block";
+});
+</script>
+
+</body>
+</html>
